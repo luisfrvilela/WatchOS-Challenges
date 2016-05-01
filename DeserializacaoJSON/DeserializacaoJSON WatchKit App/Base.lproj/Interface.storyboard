@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DeserializacaoJSON_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="m0Y-y2-be3">
+                            <items>
+                                <tableRow identifier="row" id="gdB-oA-X8d" customClass="RowController" customModule="DeserializacaoJSON_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="5" id="rIy-sz-kck">
+                                        <items>
+                                            <imageView width="32" height="31" alignment="left" verticalAlignment="center" image="old-building.png" id="mir-s5-s0n"/>
+                                            <group width="87" alignment="left" layout="vertical" id="fqR-fH-xC0">
+                                                <items>
+                                                    <label width="121" alignment="left" text="Label" minimumScaleFactor="0.69999999999999996" id="pjH-Gd-cPV">
+                                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                                    </label>
+                                                    <label width="121" alignment="left" text="Label" minimumScaleFactor="0.80000000000000004" id="Pq5-XF-Owc">
+                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelCountryCode" destination="Pq5-XF-Owc" id="al7-tT-21C"/>
+                                        <outlet property="labelPlaceName" destination="pjH-Gd-cPV" id="INU-X3-JWI"/>
+                                        <segue destination="uXY-si-oUq" kind="push" identifier="callDetail" id="5tO-bZ-VSO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.74901960779999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="tableInformation" destination="m0Y-y2-be3" id="JwS-7z-iPz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="845" y="607"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="k65-ny-8Be">
+            <objects>
+                <controller id="uXY-si-oUq" customClass="DetailController" customModule="DeserializacaoJSON_WatchKit_Extension">
+                    <items>
+                        <group width="136" alignment="left" id="piW-6K-FLX">
+                            <items>
+                                <group width="47" alignment="left" verticalAlignment="center" layout="vertical" id="Mxs-2c-6XG">
+                                    <items>
+                                        <imageView width="33" height="30" alignment="center" image="old-building.png" id="81G-Bs-jfk"/>
+                                        <label alignment="center" verticalAlignment="bottom" text="Label" id="2tK-hk-att">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="deviceRGB"/>
+                                </group>
+                                <group width="83" alignment="left" layout="vertical" id="0R9-W7-RlI">
+                                    <items>
+                                        <label alignment="left" text="Label" minimumScaleFactor="0.69999999999999996" id="FDi-B7-Hq1">
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                        </label>
+                                        <label alignment="left" text="Label" id="uU1-fc-fbF">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                        </label>
+                                        <label alignment="left" text="Label" minimumScaleFactor="0.69999999999999996" id="KD5-TW-i7d">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                        </label>
+                                        <label alignment="left" text="Label" minimumScaleFactor="0.69999999999999996" id="tZD-M2-Mxy">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.74901960779999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="labelCountryCode" destination="uU1-fc-fbF" id="31v-kK-i5o"/>
+                        <outlet property="labelLatitude" destination="tZD-M2-Mxy" id="FJJ-dJ-CYe"/>
+                        <outlet property="labelLongitude" destination="KD5-TW-i7d" id="bWG-Rt-A4P"/>
+                        <outlet property="labelPlaceName" destination="FDi-B7-Hq1" id="ceH-I5-ova"/>
+                        <outlet property="labelPostalCode" destination="2tK-hk-att" id="KgN-6B-khb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1078" y="611"/>
+        </scene>
+    </scenes>
+</document>

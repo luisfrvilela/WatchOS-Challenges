@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6069B90E1C74FCCD003EC97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B90D1C74FCCD003EC97C /* AppDelegate.swift */; };
+		6069B9101C74FCCE003EC97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B90F1C74FCCE003EC97C /* ViewController.swift */; };
+		6069B9131C74FCCE003EC97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9111C74FCCE003EC97C /* Main.storyboard */; };
+		6069B9151C74FCCE003EC97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9141C74FCCE003EC97C /* Assets.xcassets */; };
+		6069B9181C74FCCE003EC97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9161C74FCCE003EC97C /* LaunchScreen.storyboard */; };
+		6069B91D1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6069B91C1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app */; };
+		6069B9231C74FCCE003EC97C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9211C74FCCE003EC97C /* Interface.storyboard */; };
+		6069B9251C74FCCE003EC97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9241C74FCCE003EC97C /* Assets.xcassets */; };
+		6069B92C1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6069B92B1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6069B9311C74FCCE003EC97C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B9301C74FCCE003EC97C /* InterfaceController.swift */; };
+		6069B9331C74FCCE003EC97C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B9321C74FCCE003EC97C /* ExtensionDelegate.swift */; };
+		6069B9351C74FCCE003EC97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9341C74FCCE003EC97C /* Assets.xcassets */; };
+		6069B9451C74FD5A003EC97C /* iOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B9441C74FD5A003EC97C /* iOSRequest.swift */; };
+		6069B9481C74FEAB003EC97C /* ModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B9471C74FEAB003EC97C /* ModelJSON.swift */; };
+		6069B94A1C750834003EC97C /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B9491C750834003EC97C /* RowController.swift */; };
+		6069B94C1C750858003EC97C /* SectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B94B1C750858003EC97C /* SectionController.swift */; };
+		6069B94E1C763F20003EC97C /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B94D1C763F20003EC97C /* DetailController.swift */; };
+		6069B95E1C764E62003EC97C /* Carnes e Frios.png in Resources */ = {isa = PBXBuildFile; fileRef = 6069B9591C764E62003EC97C /* Carnes e Frios.png */; };
+		6069B95F1C764E62003EC97C /* Alimentação.png in Resources */ = {isa = PBXBuildFile; fileRef = 6069B95A1C764E62003EC97C /* Alimentação.png */; };
+		6069B9601C764E62003EC97C /* Hortifruti.png in Resources */ = {isa = PBXBuildFile; fileRef = 6069B95B1C764E62003EC97C /* Hortifruti.png */; };
+		6069B9611C764E62003EC97C /* Bebidas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6069B95C1C764E62003EC97C /* Bebidas.png */; };
+		6069B9621C764E62003EC97C /* Produtos de Limpeza.png in Resources */ = {isa = PBXBuildFile; fileRef = 6069B95D1C764E62003EC97C /* Produtos de Limpeza.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6069B91E1C74FCCE003EC97C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6069B9021C74FCCD003EC97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6069B91B1C74FCCE003EC97C;
+			remoteInfo = "DesafioSectionTable WatchKit App";
+		};
+		6069B92D1C74FCCE003EC97C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6069B9021C74FCCD003EC97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6069B92A1C74FCCE003EC97C;
+			remoteInfo = "DesafioSectionTable WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6069B93C1C74FCCE003EC97C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6069B92C1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B9401C74FCCE003EC97C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6069B91D1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6069B90A1C74FCCD003EC97C /* DesafioSectionTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioSectionTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6069B90D1C74FCCD003EC97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6069B90F1C74FCCE003EC97C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6069B9121C74FCCE003EC97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6069B9141C74FCCE003EC97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6069B9171C74FCCE003EC97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6069B9191C74FCCE003EC97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6069B91C1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DesafioSectionTable WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6069B9221C74FCCE003EC97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6069B9241C74FCCE003EC97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6069B9261C74FCCE003EC97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6069B92B1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DesafioSectionTable WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6069B9301C74FCCE003EC97C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6069B9321C74FCCE003EC97C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6069B9341C74FCCE003EC97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6069B9361C74FCCE003EC97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6069B9441C74FD5A003EC97C /* iOSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSRequest.swift; sourceTree = "<group>"; };
+		6069B9471C74FEAB003EC97C /* ModelJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelJSON.swift; sourceTree = "<group>"; };
+		6069B9491C750834003EC97C /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		6069B94B1C750858003EC97C /* SectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionController.swift; sourceTree = "<group>"; };
+		6069B94D1C763F20003EC97C /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		6069B9591C764E62003EC97C /* Carnes e Frios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Carnes e Frios.png"; sourceTree = "<group>"; };
+		6069B95A1C764E62003EC97C /* Alimentação.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alimentação.png"; sourceTree = "<group>"; };
+		6069B95B1C764E62003EC97C /* Hortifruti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hortifruti.png; sourceTree = "<group>"; };
+		6069B95C1C764E62003EC97C /* Bebidas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bebidas.png; sourceTree = "<group>"; };
+		6069B95D1C764E62003EC97C /* Produtos de Limpeza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Produtos de Limpeza.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6069B9071C74FCCD003EC97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B9281C74FCCE003EC97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6069B9011C74FCCD003EC97C = {
+			isa = PBXGroup;
+			children = (
+				6069B90C1C74FCCD003EC97C /* DesafioSectionTable */,
+				6069B9201C74FCCE003EC97C /* DesafioSectionTable WatchKit App */,
+				6069B92F1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension */,
+				6069B90B1C74FCCD003EC97C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6069B90B1C74FCCD003EC97C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6069B90A1C74FCCD003EC97C /* DesafioSectionTable.app */,
+				6069B91C1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app */,
+				6069B92B1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6069B90C1C74FCCD003EC97C /* DesafioSectionTable */ = {
+			isa = PBXGroup;
+			children = (
+				6069B90D1C74FCCD003EC97C /* AppDelegate.swift */,
+				6069B90F1C74FCCE003EC97C /* ViewController.swift */,
+				6069B9111C74FCCE003EC97C /* Main.storyboard */,
+				6069B9141C74FCCE003EC97C /* Assets.xcassets */,
+				6069B9161C74FCCE003EC97C /* LaunchScreen.storyboard */,
+				6069B9191C74FCCE003EC97C /* Info.plist */,
+			);
+			path = DesafioSectionTable;
+			sourceTree = "<group>";
+		};
+		6069B9201C74FCCE003EC97C /* DesafioSectionTable WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6069B9211C74FCCE003EC97C /* Interface.storyboard */,
+				6069B9241C74FCCE003EC97C /* Assets.xcassets */,
+				6069B9261C74FCCE003EC97C /* Info.plist */,
+			);
+			path = "DesafioSectionTable WatchKit App";
+			sourceTree = "<group>";
+		};
+		6069B92F1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6069B9591C764E62003EC97C /* Carnes e Frios.png */,
+				6069B95A1C764E62003EC97C /* Alimentação.png */,
+				6069B95B1C764E62003EC97C /* Hortifruti.png */,
+				6069B95C1C764E62003EC97C /* Bebidas.png */,
+				6069B95D1C764E62003EC97C /* Produtos de Limpeza.png */,
+				6069B9461C74FD69003EC97C /* Model */,
+				6069B9301C74FCCE003EC97C /* InterfaceController.swift */,
+				6069B9321C74FCCE003EC97C /* ExtensionDelegate.swift */,
+				6069B9441C74FD5A003EC97C /* iOSRequest.swift */,
+				6069B9341C74FCCE003EC97C /* Assets.xcassets */,
+				6069B9361C74FCCE003EC97C /* Info.plist */,
+				6069B9491C750834003EC97C /* RowController.swift */,
+				6069B94B1C750858003EC97C /* SectionController.swift */,
+				6069B94D1C763F20003EC97C /* DetailController.swift */,
+			);
+			path = "DesafioSectionTable WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6069B9461C74FD69003EC97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6069B9471C74FEAB003EC97C /* ModelJSON.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6069B9091C74FCCD003EC97C /* DesafioSectionTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6069B9411C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable" */;
+			buildPhases = (
+				6069B9061C74FCCD003EC97C /* Sources */,
+				6069B9071C74FCCD003EC97C /* Frameworks */,
+				6069B9081C74FCCD003EC97C /* Resources */,
+				6069B9401C74FCCE003EC97C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6069B91F1C74FCCE003EC97C /* PBXTargetDependency */,
+			);
+			name = DesafioSectionTable;
+			productName = DesafioSectionTable;
+			productReference = 6069B90A1C74FCCD003EC97C /* DesafioSectionTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6069B91B1C74FCCE003EC97C /* DesafioSectionTable WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6069B93D1C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable WatchKit App" */;
+			buildPhases = (
+				6069B91A1C74FCCE003EC97C /* Resources */,
+				6069B93C1C74FCCE003EC97C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6069B92E1C74FCCE003EC97C /* PBXTargetDependency */,
+			);
+			name = "DesafioSectionTable WatchKit App";
+			productName = "DesafioSectionTable WatchKit App";
+			productReference = 6069B91C1C74FCCE003EC97C /* DesafioSectionTable WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6069B92A1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6069B9391C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable WatchKit Extension" */;
+			buildPhases = (
+				6069B9271C74FCCE003EC97C /* Sources */,
+				6069B9281C74FCCE003EC97C /* Frameworks */,
+				6069B9291C74FCCE003EC97C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DesafioSectionTable WatchKit Extension";
+			productName = "DesafioSectionTable WatchKit Extension";
+			productReference = 6069B92B1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6069B9021C74FCCD003EC97C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Luis Resende";
+				TargetAttributes = {
+					6069B9091C74FCCD003EC97C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6069B91B1C74FCCE003EC97C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6069B92A1C74FCCE003EC97C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6069B9051C74FCCD003EC97C /* Build configuration list for PBXProject "DesafioSectionTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6069B9011C74FCCD003EC97C;
+			productRefGroup = 6069B90B1C74FCCD003EC97C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6069B9091C74FCCD003EC97C /* DesafioSectionTable */,
+				6069B91B1C74FCCE003EC97C /* DesafioSectionTable WatchKit App */,
+				6069B92A1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6069B9081C74FCCD003EC97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6069B9181C74FCCE003EC97C /* LaunchScreen.storyboard in Resources */,
+				6069B9151C74FCCE003EC97C /* Assets.xcassets in Resources */,
+				6069B9131C74FCCE003EC97C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B91A1C74FCCE003EC97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6069B9251C74FCCE003EC97C /* Assets.xcassets in Resources */,
+				6069B9231C74FCCE003EC97C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B9291C74FCCE003EC97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6069B9621C764E62003EC97C /* Produtos de Limpeza.png in Resources */,
+				6069B95F1C764E62003EC97C /* Alimentação.png in Resources */,
+				6069B9611C764E62003EC97C /* Bebidas.png in Resources */,
+				6069B95E1C764E62003EC97C /* Carnes e Frios.png in Resources */,
+				6069B9601C764E62003EC97C /* Hortifruti.png in Resources */,
+				6069B9351C74FCCE003EC97C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6069B9061C74FCCD003EC97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6069B9101C74FCCE003EC97C /* ViewController.swift in Sources */,
+				6069B90E1C74FCCD003EC97C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B9271C74FCCE003EC97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6069B94A1C750834003EC97C /* RowController.swift in Sources */,
+				6069B94E1C763F20003EC97C /* DetailController.swift in Sources */,
+				6069B9331C74FCCE003EC97C /* ExtensionDelegate.swift in Sources */,
+				6069B9481C74FEAB003EC97C /* ModelJSON.swift in Sources */,
+				6069B9311C74FCCE003EC97C /* InterfaceController.swift in Sources */,
+				6069B9451C74FD5A003EC97C /* iOSRequest.swift in Sources */,
+				6069B94C1C750858003EC97C /* SectionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6069B91F1C74FCCE003EC97C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6069B91B1C74FCCE003EC97C /* DesafioSectionTable WatchKit App */;
+			targetProxy = 6069B91E1C74FCCE003EC97C /* PBXContainerItemProxy */;
+		};
+		6069B92E1C74FCCE003EC97C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6069B92A1C74FCCE003EC97C /* DesafioSectionTable WatchKit Extension */;
+			targetProxy = 6069B92D1C74FCCE003EC97C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6069B9111C74FCCE003EC97C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6069B9121C74FCCE003EC97C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6069B9161C74FCCE003EC97C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6069B9171C74FCCE003EC97C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6069B9211C74FCCE003EC97C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6069B9221C74FCCE003EC97C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6069B9371C74FCCE003EC97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6069B9381C74FCCE003EC97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6069B93A1C74FCCE003EC97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioSectionTable WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6069B93B1C74FCCE003EC97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioSectionTable WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		6069B93E1C74FCCE003EC97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioSectionTable_WatchKit_Extension;
+				INFOPLIST_FILE = "DesafioSectionTable WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6069B93F1C74FCCE003EC97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioSectionTable_WatchKit_Extension;
+				INFOPLIST_FILE = "DesafioSectionTable WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		6069B9421C74FCCE003EC97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioSectionTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6069B9431C74FCCE003EC97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioSectionTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luisfrvilela.DesafioSectionTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6069B9051C74FCCD003EC97C /* Build configuration list for PBXProject "DesafioSectionTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B9371C74FCCE003EC97C /* Debug */,
+				6069B9381C74FCCE003EC97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6069B9391C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B93A1C74FCCE003EC97C /* Debug */,
+				6069B93B1C74FCCE003EC97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6069B93D1C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B93E1C74FCCE003EC97C /* Debug */,
+				6069B93F1C74FCCE003EC97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6069B9411C74FCCE003EC97C /* Build configuration list for PBXNativeTarget "DesafioSectionTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B9421C74FCCE003EC97C /* Debug */,
+				6069B9431C74FCCE003EC97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6069B9021C74FCCD003EC97C /* Project object */;
+}

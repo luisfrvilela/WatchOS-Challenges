@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6077DADE1C778875009DFEEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077DADD1C778875009DFEEE /* main.m */; };
+		6077DAE11C778875009DFEEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077DAE01C778875009DFEEE /* AppDelegate.m */; };
+		6077DAE41C778875009DFEEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077DAE31C778875009DFEEE /* ViewController.m */; };
+		6077DAE71C778875009DFEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6077DAE51C778875009DFEEE /* Main.storyboard */; };
+		6077DAE91C778875009DFEEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6077DAE81C778875009DFEEE /* Assets.xcassets */; };
+		6077DAEC1C778875009DFEEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6077DAEA1C778875009DFEEE /* LaunchScreen.storyboard */; };
+		6077DAF11C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6077DAF01C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app */; };
+		6077DAF71C778875009DFEEE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6077DAF51C778875009DFEEE /* Interface.storyboard */; };
+		6077DAF91C778875009DFEEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6077DAF81C778875009DFEEE /* Assets.xcassets */; };
+		6077DB001C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6077DAFF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6077DB061C778875009DFEEE /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077DB051C778875009DFEEE /* InterfaceController.m */; };
+		6077DB091C778875009DFEEE /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077DB081C778875009DFEEE /* ExtensionDelegate.m */; };
+		6077DB0B1C778875009DFEEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB0A1C778875009DFEEE /* Assets.xcassets */; };
+		6077DB201C7788A8009DFEEE /* roda-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1A1C7788A8009DFEEE /* roda-0.png */; };
+		6077DB211C7788A8009DFEEE /* roda-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1B1C7788A8009DFEEE /* roda-1.png */; };
+		6077DB221C7788A8009DFEEE /* roda-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1C1C7788A8009DFEEE /* roda-2.png */; };
+		6077DB231C7788A8009DFEEE /* roda-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1D1C7788A8009DFEEE /* roda-3.png */; };
+		6077DB241C7788A8009DFEEE /* roda-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1E1C7788A8009DFEEE /* roda-4.png */; };
+		6077DB251C7788A8009DFEEE /* roda-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6077DB1F1C7788A8009DFEEE /* roda-5.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6077DAF21C778875009DFEEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6077DAD11C778874009DFEEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6077DAEF1C778875009DFEEE;
+			remoteInfo = "IndroductionAnimation2-ObjC WatchKit App";
+		};
+		6077DB011C778875009DFEEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6077DAD11C778874009DFEEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6077DAFE1C778875009DFEEE;
+			remoteInfo = "IndroductionAnimation2-ObjC WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6077DB121C778875009DFEEE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6077DB001C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077DB161C778875009DFEEE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6077DAF11C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6077DAD91C778875009DFEEE /* IndroductionAnimation2-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IndroductionAnimation2-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6077DADD1C778875009DFEEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6077DADF1C778875009DFEEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6077DAE01C778875009DFEEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6077DAE21C778875009DFEEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6077DAE31C778875009DFEEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6077DAE61C778875009DFEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6077DAE81C778875009DFEEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6077DAEB1C778875009DFEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6077DAED1C778875009DFEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6077DAF01C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IndroductionAnimation2-ObjC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6077DAF61C778875009DFEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6077DAF81C778875009DFEEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6077DAFA1C778875009DFEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6077DAFF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IndroductionAnimation2-ObjC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6077DB041C778875009DFEEE /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		6077DB051C778875009DFEEE /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		6077DB071C778875009DFEEE /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		6077DB081C778875009DFEEE /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		6077DB0A1C778875009DFEEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6077DB0C1C778875009DFEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6077DB1A1C7788A8009DFEEE /* roda-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-0.png"; sourceTree = "<group>"; };
+		6077DB1B1C7788A8009DFEEE /* roda-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-1.png"; sourceTree = "<group>"; };
+		6077DB1C1C7788A8009DFEEE /* roda-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-2.png"; sourceTree = "<group>"; };
+		6077DB1D1C7788A8009DFEEE /* roda-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-3.png"; sourceTree = "<group>"; };
+		6077DB1E1C7788A8009DFEEE /* roda-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-4.png"; sourceTree = "<group>"; };
+		6077DB1F1C7788A8009DFEEE /* roda-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roda-5.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6077DAD61C778875009DFEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077DAFC1C778875009DFEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6077DAD01C778874009DFEEE = {
+			isa = PBXGroup;
+			children = (
+				6077DADB1C778875009DFEEE /* IndroductionAnimation2-ObjC */,
+				6077DAF41C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App */,
+				6077DB031C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension */,
+				6077DADA1C778875009DFEEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6077DADA1C778875009DFEEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6077DAD91C778875009DFEEE /* IndroductionAnimation2-ObjC.app */,
+				6077DAF01C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app */,
+				6077DAFF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6077DADB1C778875009DFEEE /* IndroductionAnimation2-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				6077DADF1C778875009DFEEE /* AppDelegate.h */,
+				6077DAE01C778875009DFEEE /* AppDelegate.m */,
+				6077DAE21C778875009DFEEE /* ViewController.h */,
+				6077DAE31C778875009DFEEE /* ViewController.m */,
+				6077DAE51C778875009DFEEE /* Main.storyboard */,
+				6077DAE81C778875009DFEEE /* Assets.xcassets */,
+				6077DAEA1C778875009DFEEE /* LaunchScreen.storyboard */,
+				6077DAED1C778875009DFEEE /* Info.plist */,
+				6077DADC1C778875009DFEEE /* Supporting Files */,
+			);
+			path = "IndroductionAnimation2-ObjC";
+			sourceTree = "<group>";
+		};
+		6077DADC1C778875009DFEEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6077DADD1C778875009DFEEE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6077DAF41C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6077DAF51C778875009DFEEE /* Interface.storyboard */,
+				6077DB1A1C7788A8009DFEEE /* roda-0.png */,
+				6077DB1B1C7788A8009DFEEE /* roda-1.png */,
+				6077DB1C1C7788A8009DFEEE /* roda-2.png */,
+				6077DB1D1C7788A8009DFEEE /* roda-3.png */,
+				6077DB1E1C7788A8009DFEEE /* roda-4.png */,
+				6077DB1F1C7788A8009DFEEE /* roda-5.png */,
+				6077DAF81C778875009DFEEE /* Assets.xcassets */,
+				6077DAFA1C778875009DFEEE /* Info.plist */,
+			);
+			path = "IndroductionAnimation2-ObjC WatchKit App";
+			sourceTree = "<group>";
+		};
+		6077DB031C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6077DB041C778875009DFEEE /* InterfaceController.h */,
+				6077DB051C778875009DFEEE /* InterfaceController.m */,
+				6077DB071C778875009DFEEE /* ExtensionDelegate.h */,
+				6077DB081C778875009DFEEE /* ExtensionDelegate.m */,
+				6077DB0A1C778875009DFEEE /* Assets.xcassets */,
+				6077DB0C1C778875009DFEEE /* Info.plist */,
+			);
+			path = "IndroductionAnimation2-ObjC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6077DAD81C778875009DFEEE /* IndroductionAnimation2-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6077DB171C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC" */;
+			buildPhases = (
+				6077DAD51C778875009DFEEE /* Sources */,
+				6077DAD61C778875009DFEEE /* Frameworks */,
+				6077DAD71C778875009DFEEE /* Resources */,
+				6077DB161C778875009DFEEE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6077DAF31C778875009DFEEE /* PBXTargetDependency */,
+			);
+			name = "IndroductionAnimation2-ObjC";
+			productName = "IndroductionAnimation2-ObjC";
+			productReference = 6077DAD91C778875009DFEEE /* IndroductionAnimation2-ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6077DAEF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6077DB131C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC WatchKit App" */;
+			buildPhases = (
+				6077DAEE1C778875009DFEEE /* Resources */,
+				6077DB121C778875009DFEEE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6077DB021C778875009DFEEE /* PBXTargetDependency */,
+			);
+			name = "IndroductionAnimation2-ObjC WatchKit App";
+			productName = "IndroductionAnimation2-ObjC WatchKit App";
+			productReference = 6077DAF01C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6077DAFE1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6077DB0F1C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC WatchKit Extension" */;
+			buildPhases = (
+				6077DAFB1C778875009DFEEE /* Sources */,
+				6077DAFC1C778875009DFEEE /* Frameworks */,
+				6077DAFD1C778875009DFEEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IndroductionAnimation2-ObjC WatchKit Extension";
+			productName = "IndroductionAnimation2-ObjC WatchKit Extension";
+			productReference = 6077DAFF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6077DAD11C778874009DFEEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Luis Resende";
+				TargetAttributes = {
+					6077DAD81C778875009DFEEE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6077DAEF1C778875009DFEEE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6077DAFE1C778875009DFEEE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6077DAD41C778874009DFEEE /* Build configuration list for PBXProject "IndroductionAnimation2-ObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6077DAD01C778874009DFEEE;
+			productRefGroup = 6077DADA1C778875009DFEEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6077DAD81C778875009DFEEE /* IndroductionAnimation2-ObjC */,
+				6077DAEF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App */,
+				6077DAFE1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6077DAD71C778875009DFEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6077DAEC1C778875009DFEEE /* LaunchScreen.storyboard in Resources */,
+				6077DAE91C778875009DFEEE /* Assets.xcassets in Resources */,
+				6077DAE71C778875009DFEEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077DAEE1C778875009DFEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6077DB201C7788A8009DFEEE /* roda-0.png in Resources */,
+				6077DB221C7788A8009DFEEE /* roda-2.png in Resources */,
+				6077DB241C7788A8009DFEEE /* roda-4.png in Resources */,
+				6077DB211C7788A8009DFEEE /* roda-1.png in Resources */,
+				6077DB231C7788A8009DFEEE /* roda-3.png in Resources */,
+				6077DB251C7788A8009DFEEE /* roda-5.png in Resources */,
+				6077DAF91C778875009DFEEE /* Assets.xcassets in Resources */,
+				6077DAF71C778875009DFEEE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077DAFD1C778875009DFEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6077DB0B1C778875009DFEEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6077DAD51C778875009DFEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6077DAE41C778875009DFEEE /* ViewController.m in Sources */,
+				6077DAE11C778875009DFEEE /* AppDelegate.m in Sources */,
+				6077DADE1C778875009DFEEE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077DAFB1C778875009DFEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6077DB091C778875009DFEEE /* ExtensionDelegate.m in Sources */,
+				6077DB061C778875009DFEEE /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6077DAF31C778875009DFEEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6077DAEF1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit App */;
+			targetProxy = 6077DAF21C778875009DFEEE /* PBXContainerItemProxy */;
+		};
+		6077DB021C778875009DFEEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6077DAFE1C778875009DFEEE /* IndroductionAnimation2-ObjC WatchKit Extension */;
+			targetProxy = 6077DB011C778875009DFEEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6077DAE51C778875009DFEEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6077DAE61C778875009DFEEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6077DAEA1C778875009DFEEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6077DAEB1C778875009DFEEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6077DAF51C778875009DFEEE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6077DAF61C778875009DFEEE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6077DB0D1C778875009DFEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6077DB0E1C778875009DFEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6077DB101C778875009DFEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6077DB111C778875009DFEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		6077DB141C778875009DFEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = IndroductionAnimation2_ObjC_WatchKit_Extension;
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6077DB151C778875009DFEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = IndroductionAnimation2_ObjC_WatchKit_Extension;
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		6077DB181C778875009DFEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6077DB191C778875009DFEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IndroductionAnimation2-ObjC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luisfrvilela.IndroductionAnimation2-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6077DAD41C778874009DFEEE /* Build configuration list for PBXProject "IndroductionAnimation2-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6077DB0D1C778875009DFEEE /* Debug */,
+				6077DB0E1C778875009DFEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6077DB0F1C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6077DB101C778875009DFEEE /* Debug */,
+				6077DB111C778875009DFEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6077DB131C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6077DB141C778875009DFEEE /* Debug */,
+				6077DB151C778875009DFEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6077DB171C778875009DFEEE /* Build configuration list for PBXNativeTarget "IndroductionAnimation2-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6077DB181C778875009DFEEE /* Debug */,
+				6077DB191C778875009DFEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6077DAD11C778874009DFEEE /* Project object */;
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DesafioHealthKit_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="FND-Dq-qDd">
+                            <items>
+                                <tableRow identifier="TypeExerciseRowController" id="Ksx-6x-FRB" customClass="TypeExerciseRowController" customModule="DesafioHealthKit_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Th8-qz-OJs">
+                                        <items>
+                                            <label width="121" alignment="left" verticalAlignment="center" text="Exercicio" textAlignment="center" id="jRy-5j-PjI">
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="4sK-nH-FiY" kind="push" identifier="SelectWorkoutTypeSegue" id="dxe-H3-ywB"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblTypeExercise" destination="jRy-5j-PjI" id="Bpy-s4-GWL"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="FND-Dq-qDd" id="wOv-Zq-ngH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="343"/>
+        </scene>
+        <!--Work Timer Interface Controller-->
+        <scene sceneID="9SK-v9-2Gg">
+            <objects>
+                <controller id="4sK-nH-FiY" customClass="WorkTimerInterfaceController" customModule="DesafioHealthKit_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" hidden="YES" layout="vertical" radius="0.0" spacing="0.0" id="QJs-zG-3kD">
+                            <items>
+                                <group alignment="left" radius="6" spacing="0.0" id="kGh-3c-TaA">
+                                    <items>
+                                        <label width="56" alignment="center" text="ACTIVE" textAlignment="center" id="kl0-xb-4FW">
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <label width="1" height="70" alignment="center" verticalAlignment="center" text="1:00" textAlignment="right" minimumScaleFactor="0.69999999999999996" id="wVS-6v-f4a">
+                                    <fontDescription key="font" type="system" pointSize="60"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="60"/>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="64"/>
+                                    </variation>
+                                </label>
+                                <group width="1" alignment="left" verticalAlignment="bottom" id="kRV-MZ-Ilh">
+                                    <items>
+                                        <label alignment="right" verticalAlignment="bottom" text="1:00:00" textAlignment="right" id="FJC-r4-yr7">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                        <label alignment="left" text="Elpased Time:" id="Ncx-WK-Mit">
+                                            <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="151" alignment="left" hidden="YES" id="iiY-MY-Bep">
+                            <items>
+                                <button width="1" alignment="left" title="Save" id="pLa-4z-Qdx">
+                                    <connections>
+                                        <action selector="saveWorkout" destination="4sK-nH-FiY" id="Xgh-Ki-IXE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="147" alignment="center" verticalAlignment="center" hidden="YES" layout="vertical" radius="0.0" spacing="0.0" id="qh3-Mg-RaC">
+                            <items>
+                                <group width="98" alignment="center" radius="6" spacing="0.0" id="nzq-oo-IMm">
+                                    <items>
+                                        <label width="89" alignment="center" text="ACTIVE" textAlignment="left" id="jcA-Ds-Dav">
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </group>
+                                <timer width="134" alignment="center" verticalAlignment="center" textAlignment="center" id="bZC-W6-x5E">
+                                    <fontDescription key="font" type="system" pointSize="35"/>
+                                </timer>
+                            </items>
+                        </group>
+                        <group width="1" height="117" alignment="center" verticalAlignment="center" backgroundImage="progress_ring0" contentMode="scaleAspectFit" layout="vertical" id="mKS-7V-hcp">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="KnP-di-v82"/>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="JKj-x5-X0a">
+                        <items>
+                            <menuItem title="Encerrar" icon="pause" id="5Qb-p7-uDd">
+                                <connections>
+                                    <action selector="endWorkout" destination="4sK-nH-FiY" id="90T-eK-ivD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cancelar" icon="decline" id="MID-bB-Z3R">
+                                <connections>
+                                    <action selector="cancelWorkout" destination="4sK-nH-FiY" id="26t-N3-lNW"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="countDownGroup" destination="mKS-7V-hcp" id="7mQ-Zd-hKJ"/>
+                        <outlet property="countDownTimer" destination="KnP-di-v82" id="cjc-4A-jvd"/>
+                        <outlet property="groupSaveWorkout" destination="iiY-MY-Bep" id="dhn-Ua-lrC"/>
+                        <outlet property="labelActive" destination="jcA-Ds-Dav" id="r0X-cv-0QM"/>
+                        <outlet property="timeActive" destination="qh3-Mg-RaC" id="OMZ-XY-EwJ"/>
+                        <outlet property="timerActivity" destination="bZC-W6-x5E" id="vDC-Zw-32a"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="370" y="344"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="DesafioHealthKit_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

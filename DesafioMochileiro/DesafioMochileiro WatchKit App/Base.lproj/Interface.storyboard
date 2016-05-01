@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DesafioMochileiro_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="cLt-vJ-0At">
+                            <items>
+                                <tableRow identifier="row" id="Ymt-TT-eaS" customClass="FlagRow" customModule="DesafioMochileiro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="51.5" alignment="left" id="klR-KB-GqP">
+                                        <items>
+                                            <imageView width="100" height="52" alignment="center" verticalAlignment="center" id="a3Z-Yh-oFt"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="backGround" destination="klR-KB-GqP" id="76j-RO-2B5"/>
+                                        <outlet property="bandeiraIMG" destination="a3Z-Yh-oFt" id="48O-sX-XwL"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="cLt-vJ-0At" id="ZvV-6p-89Y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="245" y="274"/>
+        </scene>
+        <!--bandeiraDetail-->
+        <scene sceneID="7i9-M4-c2d">
+            <objects>
+                <controller identifier="bandeiraDetail" id="680-Eb-aNv" customClass="DetalhesBandeiraInterfaceController" customModule="DesafioMochileiro_WatchKit_Extension">
+                    <items>
+                        <map height="102" alignment="left" id="mFE-gS-EPE"/>
+                        <group width="96" height="38" alignment="center" id="6uI-gm-2Mk">
+                            <items>
+                                <button width="30" height="30" alignment="left" verticalAlignment="center" backgroundImage="music" id="9SP-UB-GU2">
+                                    <connections>
+                                        <action selector="gravarAudio" destination="680-Eb-aNv" id="VDx-LV-s34"/>
+                                        <segue destination="HCF-mL-4Sb" kind="push" id="1bj-b1-UVB"/>
+                                    </connections>
+                                </button>
+                                <button width="30" height="30" alignment="right" verticalAlignment="center" backgroundImage="cinema" id="aNE-kB-Ctf">
+                                    <connections>
+                                        <action selector="gravarVideo" destination="680-Eb-aNv" id="G31-Jz-w2M"/>
+                                        <segue destination="XQG-LP-Tac" kind="push" id="bzb-t3-ksi"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="mapa" destination="mFE-gS-EPE" id="kPY-bh-ucr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="449" y="274"/>
+        </scene>
+        <!--Video Table Interface Controller-->
+        <scene sceneID="D3L-Pc-gvH">
+            <objects>
+                <controller id="XQG-LP-Tac" customClass="VideoTableInterfaceController" customModule="DesafioMochileiro_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="fne-Qc-5uW">
+                            <items>
+                                <tableRow identifier="row" id="Yyc-JT-iwI" customClass="AudioVideoRow" customModule="DesafioMochileiro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="w43-02-Hnp">
+                                        <items>
+                                            <label width="94.5" height="35" alignment="left" verticalAlignment="center" text="Label" textAlignment="justified" baselineAdjustment="alignCenters" id="mW9-Zr-QHi">
+                                                <fontDescription key="font" type="italicSystem" weight="bold" pointSize="14"/>
+                                            </label>
+                                            <imageView width="20" height="20" alignment="center" verticalAlignment="center" image="interface" id="UvJ-WD-Sc6"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nome" destination="mW9-Zr-QHi" id="xZp-33-oxV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="fne-Qc-5uW" id="MNj-vU-1ze"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="696" y="274"/>
+        </scene>
+        <!--moviewController-->
+        <scene sceneID="iUp-PW-4EC">
+            <objects>
+                <controller identifier="moviewController" id="ezj-BB-Cqn" customClass="VideoDetailInterfaceController" customModule="DesafioMochileiro_WatchKit_Extension">
+                    <items>
+                        <movie width="1" height="153" alignment="left" id="D48-wB-wTi"/>
+                    </items>
+                    <connections>
+                        <outlet property="videoPlay" destination="D48-wB-wTi" id="OLv-Vc-ZEY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="892" y="274"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="eiQ-8u-PEi">
+            <objects>
+                <glanceController topTemplateType="mediumBody1" id="r3I-7W-UFt" customClass="GlanceInterfaceController" customModule="DesafioMochileiro_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Nome" id="awx-HG-ZVe"/>
+                        <label alignment="left" text="Localizacao" id="dP4-wB-78b"/>
+                        <group alignment="left" id="AdP-ZL-R4e">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="Ym7-s4-dbV"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imageFlag" destination="Ym7-s4-dbV" id="mLx-lE-xwg"/>
+                        <outlet property="localizationCountry" destination="dP4-wB-78b" id="zS6-SG-Y7I"/>
+                        <outlet property="nameCountry" destination="awx-HG-ZVe" id="2m1-tD-2vz"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="1120" y="700"/>
+        </scene>
+        <!--Audio Table Interface Controller-->
+        <scene sceneID="5yh-Sf-SeE">
+            <objects>
+                <controller id="HCF-mL-4Sb" customClass="AudioTableInterfaceController" customModule="DesafioMochileiro_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Gravar novo áudio" id="qWe-Bb-kUq">
+                            <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="gravarNovoAudio" destination="HCF-mL-4Sb" id="BKc-Fn-zvF"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="kXl-g8-wDz">
+                            <items>
+                                <tableRow identifier="row" id="b0i-Gq-pWg" customClass="AudioVideoRow" customModule="DesafioMochileiro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="kJV-WI-L6W">
+                                        <items>
+                                            <label width="94.5" height="35" alignment="left" verticalAlignment="center" text="Label" id="2RY-uB-i1F">
+                                                <fontDescription key="font" type="italicSystem" weight="bold" pointSize="14"/>
+                                            </label>
+                                            <imageView width="20" height="20" alignment="center" verticalAlignment="center" image="interface" id="1nb-Yn-Z7l"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nome" destination="2RY-uB-i1F" id="KkB-Yf-T7R"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="kXl-g8-wDz" id="0VW-sc-gCp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="449" y="645"/>
+        </scene>
+    </scenes>
+</document>

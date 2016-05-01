@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F4C88CE1CA9CCEE0039618C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C88CD1CA9CCEE0039618C /* AppDelegate.swift */; };
+		2F4C88D01CA9CCEE0039618C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C88CF1CA9CCEE0039618C /* ViewController.swift */; };
+		2F4C88D31CA9CCEE0039618C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88D11CA9CCEE0039618C /* Main.storyboard */; };
+		2F4C88D51CA9CCEE0039618C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88D41CA9CCEE0039618C /* Assets.xcassets */; };
+		2F4C88D81CA9CCEE0039618C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88D61CA9CCEE0039618C /* LaunchScreen.storyboard */; };
+		2F4C88DD1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2F4C88DC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app */; };
+		2F4C88E31CA9CCEE0039618C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88E11CA9CCEE0039618C /* Interface.storyboard */; };
+		2F4C88E51CA9CCEE0039618C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88E41CA9CCEE0039618C /* Assets.xcassets */; };
+		2F4C88EC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F4C88EB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F4C88F11CA9CCEE0039618C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C88F01CA9CCEE0039618C /* InterfaceController.swift */; };
+		2F4C88F31CA9CCEE0039618C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C88F21CA9CCEE0039618C /* ExtensionDelegate.swift */; };
+		2F4C88F51CA9CCEE0039618C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C88F41CA9CCEE0039618C /* Assets.xcassets */; };
+		2F4C890A1CAB06FC0039618C /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4C89081CAB06FC0039618C /* MessageTableViewCell.swift */; };
+		2F4C890B1CAB06FC0039618C /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4C89091CAB06FC0039618C /* MessageTableViewCell.xib */; };
+		2F7725551CAC4AF100A84024 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7725541CAC4AF100A84024 /* RowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F4C88DE1CA9CCEE0039618C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F4C88C21CA9CCEE0039618C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F4C88DB1CA9CCEE0039618C;
+			remoteInfo = "DesafioWatchConectivy WatchKit App";
+		};
+		2F4C88ED1CA9CCEE0039618C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F4C88C21CA9CCEE0039618C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F4C88EA1CA9CCEE0039618C;
+			remoteInfo = "DesafioWatchConectivy WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F4C88FC1CA9CCEE0039618C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F4C88EC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C89001CA9CCEE0039618C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2F4C88DD1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F4C88CA1CA9CCEE0039618C /* DesafioWatchConectivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioWatchConectivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4C88CD1CA9CCEE0039618C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F4C88CF1CA9CCEE0039618C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F4C88D21CA9CCEE0039618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F4C88D41CA9CCEE0039618C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F4C88D71CA9CCEE0039618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F4C88D91CA9CCEE0039618C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4C88DC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DesafioWatchConectivy WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4C88E21CA9CCEE0039618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2F4C88E41CA9CCEE0039618C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F4C88E61CA9CCEE0039618C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4C88EB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DesafioWatchConectivy WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4C88F01CA9CCEE0039618C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2F4C88F21CA9CCEE0039618C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2F4C88F41CA9CCEE0039618C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F4C88F61CA9CCEE0039618C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4C89081CAB06FC0039618C /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		2F4C89091CAB06FC0039618C /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		2F7725541CAC4AF100A84024 /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F4C88C71CA9CCEE0039618C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C88E81CA9CCEE0039618C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F4C88C11CA9CCEE0039618C = {
+			isa = PBXGroup;
+			children = (
+				2F4C88CC1CA9CCEE0039618C /* DesafioWatchConectivy */,
+				2F4C88E01CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App */,
+				2F4C88EF1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension */,
+				2F4C88CB1CA9CCEE0039618C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F4C88CB1CA9CCEE0039618C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C88CA1CA9CCEE0039618C /* DesafioWatchConectivy.app */,
+				2F4C88DC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app */,
+				2F4C88EB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F4C88CC1CA9CCEE0039618C /* DesafioWatchConectivy */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C88CD1CA9CCEE0039618C /* AppDelegate.swift */,
+				2F4C88CF1CA9CCEE0039618C /* ViewController.swift */,
+				2F4C88D11CA9CCEE0039618C /* Main.storyboard */,
+				2F4C88D41CA9CCEE0039618C /* Assets.xcassets */,
+				2F4C88D61CA9CCEE0039618C /* LaunchScreen.storyboard */,
+				2F4C88D91CA9CCEE0039618C /* Info.plist */,
+				2F4C89081CAB06FC0039618C /* MessageTableViewCell.swift */,
+				2F4C89091CAB06FC0039618C /* MessageTableViewCell.xib */,
+			);
+			path = DesafioWatchConectivy;
+			sourceTree = "<group>";
+		};
+		2F4C88E01CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C88E11CA9CCEE0039618C /* Interface.storyboard */,
+				2F4C88E41CA9CCEE0039618C /* Assets.xcassets */,
+				2F4C88E61CA9CCEE0039618C /* Info.plist */,
+			);
+			path = "DesafioWatchConectivy WatchKit App";
+			sourceTree = "<group>";
+		};
+		2F4C88EF1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C88F01CA9CCEE0039618C /* InterfaceController.swift */,
+				2F4C88F21CA9CCEE0039618C /* ExtensionDelegate.swift */,
+				2F7725541CAC4AF100A84024 /* RowController.swift */,
+				2F4C88F41CA9CCEE0039618C /* Assets.xcassets */,
+				2F4C88F61CA9CCEE0039618C /* Info.plist */,
+			);
+			path = "DesafioWatchConectivy WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F4C88C91CA9CCEE0039618C /* DesafioWatchConectivy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4C89011CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy" */;
+			buildPhases = (
+				2F4C88C61CA9CCEE0039618C /* Sources */,
+				2F4C88C71CA9CCEE0039618C /* Frameworks */,
+				2F4C88C81CA9CCEE0039618C /* Resources */,
+				2F4C89001CA9CCEE0039618C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F4C88DF1CA9CCEE0039618C /* PBXTargetDependency */,
+			);
+			name = DesafioWatchConectivy;
+			productName = DesafioWatchConectivy;
+			productReference = 2F4C88CA1CA9CCEE0039618C /* DesafioWatchConectivy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F4C88DB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4C88FD1CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy WatchKit App" */;
+			buildPhases = (
+				2F4C88DA1CA9CCEE0039618C /* Resources */,
+				2F4C88FC1CA9CCEE0039618C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F4C88EE1CA9CCEE0039618C /* PBXTargetDependency */,
+			);
+			name = "DesafioWatchConectivy WatchKit App";
+			productName = "DesafioWatchConectivy WatchKit App";
+			productReference = 2F4C88DC1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2F4C88EA1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4C88F91CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy WatchKit Extension" */;
+			buildPhases = (
+				2F4C88E71CA9CCEE0039618C /* Sources */,
+				2F4C88E81CA9CCEE0039618C /* Frameworks */,
+				2F4C88E91CA9CCEE0039618C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DesafioWatchConectivy WatchKit Extension";
+			productName = "DesafioWatchConectivy WatchKit Extension";
+			productReference = 2F4C88EB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F4C88C21CA9CCEE0039618C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "felipe perius";
+				TargetAttributes = {
+					2F4C88C91CA9CCEE0039618C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2F4C88DB1CA9CCEE0039618C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2F4C88EA1CA9CCEE0039618C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2F4C88C51CA9CCEE0039618C /* Build configuration list for PBXProject "DesafioWatchConectivy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F4C88C11CA9CCEE0039618C;
+			productRefGroup = 2F4C88CB1CA9CCEE0039618C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F4C88C91CA9CCEE0039618C /* DesafioWatchConectivy */,
+				2F4C88DB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App */,
+				2F4C88EA1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F4C88C81CA9CCEE0039618C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4C88D81CA9CCEE0039618C /* LaunchScreen.storyboard in Resources */,
+				2F4C890B1CAB06FC0039618C /* MessageTableViewCell.xib in Resources */,
+				2F4C88D51CA9CCEE0039618C /* Assets.xcassets in Resources */,
+				2F4C88D31CA9CCEE0039618C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C88DA1CA9CCEE0039618C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4C88E51CA9CCEE0039618C /* Assets.xcassets in Resources */,
+				2F4C88E31CA9CCEE0039618C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C88E91CA9CCEE0039618C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4C88F51CA9CCEE0039618C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F4C88C61CA9CCEE0039618C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4C88D01CA9CCEE0039618C /* ViewController.swift in Sources */,
+				2F4C88CE1CA9CCEE0039618C /* AppDelegate.swift in Sources */,
+				2F4C890A1CAB06FC0039618C /* MessageTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C88E71CA9CCEE0039618C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7725551CAC4AF100A84024 /* RowController.swift in Sources */,
+				2F4C88F31CA9CCEE0039618C /* ExtensionDelegate.swift in Sources */,
+				2F4C88F11CA9CCEE0039618C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F4C88DF1CA9CCEE0039618C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F4C88DB1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit App */;
+			targetProxy = 2F4C88DE1CA9CCEE0039618C /* PBXContainerItemProxy */;
+		};
+		2F4C88EE1CA9CCEE0039618C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F4C88EA1CA9CCEE0039618C /* DesafioWatchConectivy WatchKit Extension */;
+			targetProxy = 2F4C88ED1CA9CCEE0039618C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F4C88D11CA9CCEE0039618C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F4C88D21CA9CCEE0039618C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F4C88D61CA9CCEE0039618C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F4C88D71CA9CCEE0039618C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2F4C88E11CA9CCEE0039618C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F4C88E21CA9CCEE0039618C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F4C88F71CA9CCEE0039618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F4C88F81CA9CCEE0039618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F4C88FA1CA9CCEE0039618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioWatchConectivy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		2F4C88FB1CA9CCEE0039618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioWatchConectivy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		2F4C88FE1CA9CCEE0039618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioWatchConectivy_WatchKit_Extension;
+				INFOPLIST_FILE = "DesafioWatchConectivy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		2F4C88FF1CA9CCEE0039618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioWatchConectivy_WatchKit_Extension;
+				INFOPLIST_FILE = "DesafioWatchConectivy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		2F4C89021CA9CCEE0039618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioWatchConectivy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F4C89031CA9CCEE0039618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioWatchConectivy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe-perius.DesafioWatchConectivy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F4C88C51CA9CCEE0039618C /* Build configuration list for PBXProject "DesafioWatchConectivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4C88F71CA9CCEE0039618C /* Debug */,
+				2F4C88F81CA9CCEE0039618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F4C88F91CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4C88FA1CA9CCEE0039618C /* Debug */,
+				2F4C88FB1CA9CCEE0039618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F4C88FD1CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4C88FE1CA9CCEE0039618C /* Debug */,
+				2F4C88FF1CA9CCEE0039618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F4C89011CA9CCEE0039618C /* Build configuration list for PBXNativeTarget "DesafioWatchConectivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4C89021CA9CCEE0039618C /* Debug */,
+				2F4C89031CA9CCEE0039618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F4C88C21CA9CCEE0039618C /* Project object */;
+}

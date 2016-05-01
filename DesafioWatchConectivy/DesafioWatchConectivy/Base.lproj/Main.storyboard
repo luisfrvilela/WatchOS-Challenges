@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R5O-gS-YSn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="atg-V1-NFt">
+            <objects>
+                <navigationController id="R5O-gS-YSn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KR6-k2-Npe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hf9-4o-ols"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulF-qn-OTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="330"/>
+        </scene>
+        <!--Whats Puto-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioWatchConectivy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-Pr-t3V">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8W5-et-kGv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="f1v-2n-mvU"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-lg-VOB">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="jAn-Nq-bVo">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="gO0-8t-ZlZ">
+                                            <rect key="frame" x="16" y="7" width="203" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="enviar" id="PMc-Ru-RTj">
+                                        <connections>
+                                            <action selector="send:" destination="BYZ-38-t0r" id="1U0-Pe-fe9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="Fhp-jZ-GlP">
+                                        <connections>
+                                            <action selector="useCameraRoll:" destination="BYZ-38-t0r" id="UdE-dX-1br"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="top" secondItem="CyJ-Pr-t3V" secondAttribute="bottom" id="6Dq-I2-lrZ"/>
+                            <constraint firstItem="CyJ-Pr-t3V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6V6-tQ-9Sr"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6wm-hP-9FF"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LoN-Vh-F5O"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="trailing" secondItem="CyJ-Pr-t3V" secondAttribute="trailing" id="oUk-84-4QJ"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="centerX" secondItem="CyJ-Pr-t3V" secondAttribute="centerX" id="oaL-gc-Uh4"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="leading" secondItem="CyJ-Pr-t3V" secondAttribute="leading" id="t6P-Fn-Rck"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tEf-vo-7MB"/>
+                            <constraint firstItem="dl9-lg-VOB" firstAttribute="top" secondItem="CyJ-Pr-t3V" secondAttribute="bottom" id="w1R-Kx-BGn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Whats Puto" id="7g5-U4-jcc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="CyJ-Pr-t3V" id="hNy-hJ-sNN"/>
+                        <outlet property="texfield" destination="gO0-8t-ZlZ" id="U22-KU-2nQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="314"/>
+        </scene>
+    </scenes>
+</document>

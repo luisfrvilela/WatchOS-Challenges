@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		608700F11CB83602008FB6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608700F01CB83602008FB6CB /* AppDelegate.swift */; };
+		608700F31CB83602008FB6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608700F21CB83602008FB6CB /* ViewController.swift */; };
+		608700F61CB83602008FB6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608700F41CB83602008FB6CB /* Main.storyboard */; };
+		608700F81CB83602008FB6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608700F71CB83602008FB6CB /* Assets.xcassets */; };
+		608700FB1CB83602008FB6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608700F91CB83602008FB6CB /* LaunchScreen.storyboard */; };
+		608701001CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 608700FF1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app */; };
+		608701061CB83602008FB6CB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608701041CB83602008FB6CB /* Interface.storyboard */; };
+		608701081CB83602008FB6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608701071CB83602008FB6CB /* Assets.xcassets */; };
+		6087010F1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6087010E1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		608701141CB83602008FB6CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608701131CB83602008FB6CB /* InterfaceController.swift */; };
+		608701161CB83602008FB6CB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608701151CB83602008FB6CB /* ExtensionDelegate.swift */; };
+		608701181CB83602008FB6CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608701171CB83602008FB6CB /* ComplicationController.swift */; };
+		6087011A1CB83602008FB6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608701191CB83602008FB6CB /* Assets.xcassets */; };
+		6087012A1CB83635008FB6CB /* iOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608701291CB83635008FB6CB /* iOSRequest.swift */; };
+		608701481CB94C4A008FB6CB /* ComplicationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608701471CB94C4A008FB6CB /* ComplicationUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608701011CB83602008FB6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608700E51CB83602008FB6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608700FE1CB83602008FB6CB;
+			remoteInfo = "ComplicationTimeTravel WatchKit App";
+		};
+		608701101CB83602008FB6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608700E51CB83602008FB6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6087010D1CB83602008FB6CB;
+			remoteInfo = "ComplicationTimeTravel WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		608701211CB83602008FB6CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6087010F1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608701251CB83602008FB6CB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				608701001CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		608700ED1CB83602008FB6CB /* ComplicationTimeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComplicationTimeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		608700F01CB83602008FB6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		608700F21CB83602008FB6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		608700F51CB83602008FB6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608700F71CB83602008FB6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		608700FA1CB83602008FB6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		608700FC1CB83602008FB6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608700FF1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComplicationTimeTravel WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608701051CB83602008FB6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		608701071CB83602008FB6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		608701091CB83602008FB6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6087010E1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ComplicationTimeTravel WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608701131CB83602008FB6CB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		608701151CB83602008FB6CB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		608701171CB83602008FB6CB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		608701191CB83602008FB6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6087011B1CB83602008FB6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608701291CB83635008FB6CB /* iOSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSRequest.swift; sourceTree = "<group>"; };
+		608701471CB94C4A008FB6CB /* ComplicationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608700EA1CB83602008FB6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6087010B1CB83602008FB6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608700E41CB83602008FB6CB = {
+			isa = PBXGroup;
+			children = (
+				608700EF1CB83602008FB6CB /* ComplicationTimeTravel */,
+				608701031CB83602008FB6CB /* ComplicationTimeTravel WatchKit App */,
+				608701121CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension */,
+				608700EE1CB83602008FB6CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		608700EE1CB83602008FB6CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608700ED1CB83602008FB6CB /* ComplicationTimeTravel.app */,
+				608700FF1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app */,
+				6087010E1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		608700EF1CB83602008FB6CB /* ComplicationTimeTravel */ = {
+			isa = PBXGroup;
+			children = (
+				608700F01CB83602008FB6CB /* AppDelegate.swift */,
+				608700F21CB83602008FB6CB /* ViewController.swift */,
+				608700F41CB83602008FB6CB /* Main.storyboard */,
+				608700F71CB83602008FB6CB /* Assets.xcassets */,
+				608700F91CB83602008FB6CB /* LaunchScreen.storyboard */,
+				608700FC1CB83602008FB6CB /* Info.plist */,
+			);
+			path = ComplicationTimeTravel;
+			sourceTree = "<group>";
+		};
+		608701031CB83602008FB6CB /* ComplicationTimeTravel WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				608701041CB83602008FB6CB /* Interface.storyboard */,
+				608701071CB83602008FB6CB /* Assets.xcassets */,
+				608701091CB83602008FB6CB /* Info.plist */,
+			);
+			path = "ComplicationTimeTravel WatchKit App";
+			sourceTree = "<group>";
+		};
+		608701121CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				608701131CB83602008FB6CB /* InterfaceController.swift */,
+				608701151CB83602008FB6CB /* ExtensionDelegate.swift */,
+				608701171CB83602008FB6CB /* ComplicationController.swift */,
+				608701471CB94C4A008FB6CB /* ComplicationUtil.swift */,
+				6087012B1CB8363A008FB6CB /* JSON */,
+				608701191CB83602008FB6CB /* Assets.xcassets */,
+				6087011B1CB83602008FB6CB /* Info.plist */,
+			);
+			path = "ComplicationTimeTravel WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6087012B1CB8363A008FB6CB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				608701291CB83635008FB6CB /* iOSRequest.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		608700EC1CB83602008FB6CB /* ComplicationTimeTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608701261CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel" */;
+			buildPhases = (
+				608700E91CB83602008FB6CB /* Sources */,
+				608700EA1CB83602008FB6CB /* Frameworks */,
+				608700EB1CB83602008FB6CB /* Resources */,
+				608701251CB83602008FB6CB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608701021CB83602008FB6CB /* PBXTargetDependency */,
+			);
+			name = ComplicationTimeTravel;
+			productName = ComplicationTimeTravel;
+			productReference = 608700ED1CB83602008FB6CB /* ComplicationTimeTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		608700FE1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608701221CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel WatchKit App" */;
+			buildPhases = (
+				608700FD1CB83602008FB6CB /* Resources */,
+				608701211CB83602008FB6CB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608701111CB83602008FB6CB /* PBXTargetDependency */,
+			);
+			name = "ComplicationTimeTravel WatchKit App";
+			productName = "ComplicationTimeTravel WatchKit App";
+			productReference = 608700FF1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6087010D1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6087011E1CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel WatchKit Extension" */;
+			buildPhases = (
+				6087010A1CB83602008FB6CB /* Sources */,
+				6087010B1CB83602008FB6CB /* Frameworks */,
+				6087010C1CB83602008FB6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ComplicationTimeTravel WatchKit Extension";
+			productName = "ComplicationTimeTravel WatchKit Extension";
+			productReference = 6087010E1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608700E51CB83602008FB6CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Luis Resende";
+				TargetAttributes = {
+					608700EC1CB83602008FB6CB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					608700FE1CB83602008FB6CB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6087010D1CB83602008FB6CB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 608700E81CB83602008FB6CB /* Build configuration list for PBXProject "ComplicationTimeTravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608700E41CB83602008FB6CB;
+			productRefGroup = 608700EE1CB83602008FB6CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608700EC1CB83602008FB6CB /* ComplicationTimeTravel */,
+				608700FE1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App */,
+				6087010D1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		608700EB1CB83602008FB6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608700FB1CB83602008FB6CB /* LaunchScreen.storyboard in Resources */,
+				608700F81CB83602008FB6CB /* Assets.xcassets in Resources */,
+				608700F61CB83602008FB6CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608700FD1CB83602008FB6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608701081CB83602008FB6CB /* Assets.xcassets in Resources */,
+				608701061CB83602008FB6CB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6087010C1CB83602008FB6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6087011A1CB83602008FB6CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608700E91CB83602008FB6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608700F31CB83602008FB6CB /* ViewController.swift in Sources */,
+				608700F11CB83602008FB6CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6087010A1CB83602008FB6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608701161CB83602008FB6CB /* ExtensionDelegate.swift in Sources */,
+				608701141CB83602008FB6CB /* InterfaceController.swift in Sources */,
+				608701481CB94C4A008FB6CB /* ComplicationUtil.swift in Sources */,
+				608701181CB83602008FB6CB /* ComplicationController.swift in Sources */,
+				6087012A1CB83635008FB6CB /* iOSRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608701021CB83602008FB6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608700FE1CB83602008FB6CB /* ComplicationTimeTravel WatchKit App */;
+			targetProxy = 608701011CB83602008FB6CB /* PBXContainerItemProxy */;
+		};
+		608701111CB83602008FB6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6087010D1CB83602008FB6CB /* ComplicationTimeTravel WatchKit Extension */;
+			targetProxy = 608701101CB83602008FB6CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		608700F41CB83602008FB6CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608700F51CB83602008FB6CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		608700F91CB83602008FB6CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608700FA1CB83602008FB6CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		608701041CB83602008FB6CB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608701051CB83602008FB6CB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6087011C1CB83602008FB6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6087011D1CB83602008FB6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6087011F1CB83602008FB6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ComplicationTimeTravel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		608701201CB83602008FB6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ComplicationTimeTravel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		608701231CB83602008FB6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ComplicationTimeTravel_WatchKit_Extension;
+				INFOPLIST_FILE = "ComplicationTimeTravel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		608701241CB83602008FB6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ComplicationTimeTravel_WatchKit_Extension;
+				INFOPLIST_FILE = "ComplicationTimeTravel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		608701271CB83602008FB6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComplicationTimeTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		608701281CB83602008FB6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComplicationTimeTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LFRV.ComplicationTimeTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608700E81CB83602008FB6CB /* Build configuration list for PBXProject "ComplicationTimeTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6087011C1CB83602008FB6CB /* Debug */,
+				6087011D1CB83602008FB6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6087011E1CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6087011F1CB83602008FB6CB /* Debug */,
+				608701201CB83602008FB6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		608701221CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608701231CB83602008FB6CB /* Debug */,
+				608701241CB83602008FB6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		608701261CB83602008FB6CB /* Build configuration list for PBXNativeTarget "ComplicationTimeTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608701271CB83602008FB6CB /* Debug */,
+				608701281CB83602008FB6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608700E51CB83602008FB6CB /* Project object */;
+}

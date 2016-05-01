@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DictationExample_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Falar" id="E2q-xf-IpE">
+                            <connections>
+                                <action selector="actionSpeak" destination="AgC-eL-Hgc" id="6B4-pl-Pri"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="39.5" alignment="left" text="Label" id="kna-QX-8l7"/>
+                        <imageView alignment="center" id="4MM-4S-cTM"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageGIF" destination="4MM-4S-cTM" id="dhB-4f-hEK"/>
+                        <outlet property="labelResult" destination="kna-QX-8l7" id="d64-X2-aqO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="869" y="659"/>
+        </scene>
+    </scenes>
+</document>

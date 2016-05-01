@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48333A31CB2F49000CFCE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48333A21CB2F49000CFCE7C /* AppDelegate.swift */; };
+		D48333A51CB2F49000CFCE7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48333A41CB2F49000CFCE7C /* ViewController.swift */; };
+		D48333A81CB2F49000CFCE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48333A61CB2F49000CFCE7C /* Main.storyboard */; };
+		D48333AA1CB2F49000CFCE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48333A91CB2F49000CFCE7C /* Assets.xcassets */; };
+		D48333AD1CB2F49000CFCE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48333AB1CB2F49000CFCE7C /* LaunchScreen.storyboard */; };
+		D48333BA1CB2F7B200CFCE7C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48333B81CB2F7B200CFCE7C /* Interface.storyboard */; };
+		D48333BC1CB2F7B200CFCE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48333BB1CB2F7B200CFCE7C /* Assets.xcassets */; };
+		D48333C31CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D48333C21CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D48333C81CB2F7B200CFCE7C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48333C71CB2F7B200CFCE7C /* InterfaceController.swift */; };
+		D48333CA1CB2F7B200CFCE7C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48333C91CB2F7B200CFCE7C /* ExtensionDelegate.swift */; };
+		D48333CC1CB2F7B200CFCE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48333CB1CB2F7B200CFCE7C /* Assets.xcassets */; };
+		D48333D01CB2F7B200CFCE7C /* DesafioChicoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D48333B61CB2F7B200CFCE7C /* DesafioChicoteWatch.app */; };
+		D48333E21CB59D8100CFCE7C /* sound 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D48333DF1CB59D8100CFCE7C /* sound 1.wav */; };
+		D48333E31CB59D8100CFCE7C /* sound 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D48333E01CB59D8100CFCE7C /* sound 2.wav */; };
+		D48333E41CB59D8100CFCE7C /* sound 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D48333E11CB59D8100CFCE7C /* sound 3.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D48333C41CB2F7B200CFCE7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48333971CB2F49000CFCE7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48333C11CB2F7B200CFCE7C;
+			remoteInfo = "DesafioChicoteWatch Extension";
+		};
+		D48333CE1CB2F7B200CFCE7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48333971CB2F49000CFCE7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48333B51CB2F7B200CFCE7C;
+			remoteInfo = DesafioChicoteWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D48333D41CB2F7B200CFCE7C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D48333C31CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48333D81CB2F7B200CFCE7C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D48333D01CB2F7B200CFCE7C /* DesafioChicoteWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D483339F1CB2F49000CFCE7C /* DesafioChicote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioChicote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48333A21CB2F49000CFCE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D48333A41CB2F49000CFCE7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D48333A71CB2F49000CFCE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D48333A91CB2F49000CFCE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D48333AC1CB2F49000CFCE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D48333AE1CB2F49000CFCE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48333B61CB2F7B200CFCE7C /* DesafioChicoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioChicoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48333B91CB2F7B200CFCE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D48333BB1CB2F7B200CFCE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D48333BD1CB2F7B200CFCE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48333C21CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DesafioChicoteWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48333C71CB2F7B200CFCE7C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D48333C91CB2F7B200CFCE7C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D48333CB1CB2F7B200CFCE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D48333CD1CB2F7B200CFCE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48333DF1CB59D8100CFCE7C /* sound 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sound 1.wav"; sourceTree = "<group>"; };
+		D48333E01CB59D8100CFCE7C /* sound 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sound 2.wav"; sourceTree = "<group>"; };
+		D48333E11CB59D8100CFCE7C /* sound 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sound 3.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D483339C1CB2F49000CFCE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48333BF1CB2F7B200CFCE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48333961CB2F49000CFCE7C = {
+			isa = PBXGroup;
+			children = (
+				D48333A11CB2F49000CFCE7C /* DesafioChicote */,
+				D48333B71CB2F7B200CFCE7C /* DesafioChicoteWatch */,
+				D48333C61CB2F7B200CFCE7C /* DesafioChicoteWatch Extension */,
+				D48333A01CB2F49000CFCE7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48333A01CB2F49000CFCE7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D483339F1CB2F49000CFCE7C /* DesafioChicote.app */,
+				D48333B61CB2F7B200CFCE7C /* DesafioChicoteWatch.app */,
+				D48333C21CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48333A11CB2F49000CFCE7C /* DesafioChicote */ = {
+			isa = PBXGroup;
+			children = (
+				D48333DF1CB59D8100CFCE7C /* sound 1.wav */,
+				D48333E01CB59D8100CFCE7C /* sound 2.wav */,
+				D48333E11CB59D8100CFCE7C /* sound 3.wav */,
+				D48333A21CB2F49000CFCE7C /* AppDelegate.swift */,
+				D48333A41CB2F49000CFCE7C /* ViewController.swift */,
+				D48333A61CB2F49000CFCE7C /* Main.storyboard */,
+				D48333A91CB2F49000CFCE7C /* Assets.xcassets */,
+				D48333AB1CB2F49000CFCE7C /* LaunchScreen.storyboard */,
+				D48333AE1CB2F49000CFCE7C /* Info.plist */,
+			);
+			path = DesafioChicote;
+			sourceTree = "<group>";
+		};
+		D48333B71CB2F7B200CFCE7C /* DesafioChicoteWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D48333B81CB2F7B200CFCE7C /* Interface.storyboard */,
+				D48333BB1CB2F7B200CFCE7C /* Assets.xcassets */,
+				D48333BD1CB2F7B200CFCE7C /* Info.plist */,
+			);
+			path = DesafioChicoteWatch;
+			sourceTree = "<group>";
+		};
+		D48333C61CB2F7B200CFCE7C /* DesafioChicoteWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D48333C71CB2F7B200CFCE7C /* InterfaceController.swift */,
+				D48333C91CB2F7B200CFCE7C /* ExtensionDelegate.swift */,
+				D48333CB1CB2F7B200CFCE7C /* Assets.xcassets */,
+				D48333CD1CB2F7B200CFCE7C /* Info.plist */,
+			);
+			path = "DesafioChicoteWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D483339E1CB2F49000CFCE7C /* DesafioChicote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48333B11CB2F49000CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicote" */;
+			buildPhases = (
+				D483339B1CB2F49000CFCE7C /* Sources */,
+				D483339C1CB2F49000CFCE7C /* Frameworks */,
+				D483339D1CB2F49000CFCE7C /* Resources */,
+				D48333D81CB2F7B200CFCE7C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48333CF1CB2F7B200CFCE7C /* PBXTargetDependency */,
+			);
+			name = DesafioChicote;
+			productName = DesafioChicote;
+			productReference = D483339F1CB2F49000CFCE7C /* DesafioChicote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48333B51CB2F7B200CFCE7C /* DesafioChicoteWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48333D51CB2F7B200CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicoteWatch" */;
+			buildPhases = (
+				D48333B41CB2F7B200CFCE7C /* Resources */,
+				D48333D41CB2F7B200CFCE7C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48333C51CB2F7B200CFCE7C /* PBXTargetDependency */,
+			);
+			name = DesafioChicoteWatch;
+			productName = DesafioChicoteWatch;
+			productReference = D48333B61CB2F7B200CFCE7C /* DesafioChicoteWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D48333C11CB2F7B200CFCE7C /* DesafioChicoteWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48333D11CB2F7B200CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicoteWatch Extension" */;
+			buildPhases = (
+				D48333BE1CB2F7B200CFCE7C /* Sources */,
+				D48333BF1CB2F7B200CFCE7C /* Frameworks */,
+				D48333C01CB2F7B200CFCE7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DesafioChicoteWatch Extension";
+			productName = "DesafioChicoteWatch Extension";
+			productReference = D48333C21CB2F7B200CFCE7C /* DesafioChicoteWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48333971CB2F49000CFCE7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Huallyd Smadi";
+				TargetAttributes = {
+					D483339E1CB2F49000CFCE7C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D48333B51CB2F7B200CFCE7C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D48333C11CB2F7B200CFCE7C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D483339A1CB2F49000CFCE7C /* Build configuration list for PBXProject "DesafioChicote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D48333961CB2F49000CFCE7C;
+			productRefGroup = D48333A01CB2F49000CFCE7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D483339E1CB2F49000CFCE7C /* DesafioChicote */,
+				D48333B51CB2F7B200CFCE7C /* DesafioChicoteWatch */,
+				D48333C11CB2F7B200CFCE7C /* DesafioChicoteWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D483339D1CB2F49000CFCE7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48333AD1CB2F49000CFCE7C /* LaunchScreen.storyboard in Resources */,
+				D48333E21CB59D8100CFCE7C /* sound 1.wav in Resources */,
+				D48333AA1CB2F49000CFCE7C /* Assets.xcassets in Resources */,
+				D48333A81CB2F49000CFCE7C /* Main.storyboard in Resources */,
+				D48333E31CB59D8100CFCE7C /* sound 2.wav in Resources */,
+				D48333E41CB59D8100CFCE7C /* sound 3.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48333B41CB2F7B200CFCE7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48333BC1CB2F7B200CFCE7C /* Assets.xcassets in Resources */,
+				D48333BA1CB2F7B200CFCE7C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48333C01CB2F7B200CFCE7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48333CC1CB2F7B200CFCE7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D483339B1CB2F49000CFCE7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48333A51CB2F49000CFCE7C /* ViewController.swift in Sources */,
+				D48333A31CB2F49000CFCE7C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48333BE1CB2F7B200CFCE7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48333CA1CB2F7B200CFCE7C /* ExtensionDelegate.swift in Sources */,
+				D48333C81CB2F7B200CFCE7C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48333C51CB2F7B200CFCE7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48333C11CB2F7B200CFCE7C /* DesafioChicoteWatch Extension */;
+			targetProxy = D48333C41CB2F7B200CFCE7C /* PBXContainerItemProxy */;
+		};
+		D48333CF1CB2F7B200CFCE7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48333B51CB2F7B200CFCE7C /* DesafioChicoteWatch */;
+			targetProxy = D48333CE1CB2F7B200CFCE7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D48333A61CB2F49000CFCE7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48333A71CB2F49000CFCE7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D48333AB1CB2F49000CFCE7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48333AC1CB2F49000CFCE7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D48333B81CB2F7B200CFCE7C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48333B91CB2F7B200CFCE7C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48333AF1CB2F49000CFCE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D48333B01CB2F49000CFCE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48333B21CB2F49000CFCE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioChicote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D48333B31CB2F49000CFCE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioChicote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D48333D21CB2F7B200CFCE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioChicoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D48333D31CB2F7B200CFCE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DesafioChicoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D48333D61CB2F7B200CFCE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioChicoteWatch_Extension;
+				INFOPLIST_FILE = DesafioChicoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D48333D71CB2F7B200CFCE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DesafioChicoteWatch_Extension;
+				INFOPLIST_FILE = DesafioChicoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = HS.DesafioChicote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D483339A1CB2F49000CFCE7C /* Build configuration list for PBXProject "DesafioChicote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48333AF1CB2F49000CFCE7C /* Debug */,
+				D48333B01CB2F49000CFCE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48333B11CB2F49000CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48333B21CB2F49000CFCE7C /* Debug */,
+				D48333B31CB2F49000CFCE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48333D11CB2F7B200CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicoteWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48333D21CB2F7B200CFCE7C /* Debug */,
+				D48333D31CB2F7B200CFCE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48333D51CB2F7B200CFCE7C /* Build configuration list for PBXNativeTarget "DesafioChicoteWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48333D61CB2F7B200CFCE7C /* Debug */,
+				D48333D71CB2F7B200CFCE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D48333971CB2F49000CFCE7C /* Project object */;
+}

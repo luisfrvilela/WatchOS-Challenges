@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ExemploWCMessage_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Incremento" id="WGh-Dz-KX3">
+                            <connections>
+                                <action selector="increment" destination="AgC-eL-Hgc" id="CcP-uc-7Z8"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Limpar" id="aYu-0Y-wUq">
+                            <connections>
+                                <action selector="clean" destination="AgC-eL-Hgc" id="8oy-TT-wOv"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Transferir" id="UKx-BY-HPc">
+                            <connections>
+                                <action selector="transfer" destination="AgC-eL-Hgc" id="Kva-cI-p6a"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="0" id="SBb-ce-MH8"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="SBb-ce-MH8" id="arl-8X-ple"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

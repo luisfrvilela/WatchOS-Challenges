@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GeradorCitacoes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="42.5" alignment="left" text="Label" textAlignment="left" numberOfLines="0" id="gaL-Ck-2mN"/>
+                        <group width="1" alignment="left" id="mlo-Un-pAv">
+                            <items>
+                                <button width="62" alignment="left" title="Passar" id="751-Jv-uDx">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="generateStaff" destination="AgC-eL-Hgc" id="5rm-lR-C7i"/>
+                                    </connections>
+                                </button>
+                                <button width="62" alignment="right" title="Salvar!" id="BmR-1b-Zbh">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="saveStaff" destination="AgC-eL-Hgc" id="bjP-Bh-RFh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Salvou." id="U12-1T-5vg"/>
+                        <button width="1" alignment="center" title="Button" id="rqk-Bh-sMl">
+                            <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showAllStaff" destination="AgC-eL-Hgc" id="fDT-KK-rRr"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="4U7-1W-Bsr">
+                            <items>
+                                <tableRow identifier="tableStaff" id="2po-ox-BcD" customClass="CellRowController" customModule="GeradorCitacoes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="7qc-Hs-3VV">
+                                        <items>
+                                            <label width="128.5" alignment="left" text="Label" numberOfLines="0" id="cmk-gM-IOf"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="cmk-gM-IOf" id="zM8-lz-BPy"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="buttonPass" destination="751-Jv-uDx" id="YvV-Ay-dBt"/>
+                        <outlet property="buttonSave" destination="BmR-1b-Zbh" id="TWN-3T-JAC"/>
+                        <outlet property="buttonShowStaff" destination="rqk-Bh-sMl" id="zWp-Dy-u10"/>
+                        <outlet property="labelSave" destination="U12-1T-5vg" id="45y-5j-v3k"/>
+                        <outlet property="labelStaff" destination="gaL-Ck-2mN" id="NiV-Nn-puc"/>
+                        <outlet property="staffTable" destination="4U7-1W-Bsr" id="GvU-dw-e7R"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="933" y="465"/>
+        </scene>
+    </scenes>
+</document>
